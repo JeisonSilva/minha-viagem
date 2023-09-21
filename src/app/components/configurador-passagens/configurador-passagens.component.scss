@@ -1,0 +1,70 @@
+mat-card {
+  background-color: var(--cinza);
+  border: 0 solid;
+  box-shadow: 0px var(--cinza);
+
+  mat-card-title {
+    font-family: "Roboto";
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px 0 0 0;
+    div.passagem__container__1 {
+      display: flex;
+      gap: 16px;
+
+      padding: 0px 0 0 8px;
+
+      mat-chip-listbox {
+        mat-chip-option {
+          margin: 8px 0px 8px 0px;
+          border: 1px solid var(--preto-2);
+        }
+
+        mat-chip-option.option:first-child {
+          border-radius: 8px 1px 1px 8px;
+
+          border: 1px solid var(--preto-2);
+          border-right: 0px;
+        }
+
+        .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+          background-color: var(--roxo-2);
+        }
+
+        mat-chip-option.option:last-child {
+          border-radius: 0px 8px 8px 0px;
+        }
+      }
+
+      .mat-mdc-form-field-flex {
+        display: block;
+      }
+    }
+
+    div.passagem__container_2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      mat-form-field {
+        width: 200px;
+        flex-direction: row;
+      }
+
+      .button {
+        background-color: var(--roxo-escuro);
+        color: var(--branco);
+
+        width: 102px;
+        height: 36px;
+      }
+    }
+  }
+}
