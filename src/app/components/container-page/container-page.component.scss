@@ -1,4 +1,8 @@
 ::ng-deep section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
   width: 1024px;
   height: 100%;
 

@@ -20,6 +20,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { ProdutosViagemComponent } from './components/produtos-viagem/produtos-viagem.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     BannerComponent,
     ContainerPageComponent,
     ConfiguradorPassagensComponent,
+    ProdutosViagemComponent,
   ],
   imports: [
     BrowserModule,
