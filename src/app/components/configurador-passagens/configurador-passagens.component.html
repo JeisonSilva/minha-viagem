@@ -1,0 +1,61 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Passagens</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="passagem__container__1">
+      <mat-chip-listbox aria-label="Fish selection">
+        <mat-chip-option class="option">IDA E VOLTA</mat-chip-option>
+        <mat-chip-option class="option">SOMENTE IDA</mat-chip-option>
+      </mat-chip-listbox>
+
+      <mat-chip-listbox aria-label="Fish selection">
+        <mat-chip-option>1 Adulto</mat-chip-option>
+      </mat-chip-listbox>
+
+      <mat-chip-listbox aria-label="Fish selection">
+        <mat-chip-option>Econômica</mat-chip-option>
+      </mat-chip-listbox>
+    </div>
+
+    <div class="passagem__container_2">
+      <mat-form-field appearance="outline">
+        <mat-label>Origem</mat-label>
+        <span matPrefix><mat-icon>flight_takeoff</mat-icon></span>
+        <input type="text" matInput />
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+
+      <mat-icon>swap_horiz</mat-icon>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Destino</mat-label>
+        <span matPrefix><mat-icon>flight_takeoff</mat-icon></span>
+        <input type="text" matInput />
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Data de ida</mat-label>
+        <input matInput [matDatepicker]="picker1" placeholder="Selecione" />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker1"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Data de volta</mat-label>
+        <input matInput [matDatepicker]="picker2" placeholder="Selecione" />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker2"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+
+      <button mat-button color="primary" class="button">BUSCAR</button>
+    </div>
+  </mat-card-content>
+</mat-card>
