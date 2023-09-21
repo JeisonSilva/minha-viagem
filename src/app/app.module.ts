@@ -11,6 +11,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './pages/home/home.component';
 import { ContainerPageComponent } from './components/container-page/container-page.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { ConfiguradorPassagensComponent } from './components/configurador-passagens/configurador-passagens.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -19,6 +28,7 @@ import { ContainerPageComponent } from './components/container-page/container-pa
     HeaderComponent,
     BannerComponent,
     ContainerPageComponent,
+    ConfiguradorPassagensComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +36,14 @@ import { ContainerPageComponent } from './components/container-page/container-pa
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
+    MatCardModule,
+    MatChipsModule,
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
