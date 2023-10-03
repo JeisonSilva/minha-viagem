@@ -1,0 +1,47 @@
+.footer {
+  width: 100vw;
+  height: 400px;
+
+  figure {
+    img {
+      width: 100%;
+    }
+  }
+
+  .footer__contato {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--preto);
+    color: var(--branco);
+
+    height: 200px;
+
+    .contato__horario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      figure {
+        img {
+          width: 161px;
+          height: 40px;
+        }
+      }
+    }
+
+    .contato__redessociais {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+  }
+}
